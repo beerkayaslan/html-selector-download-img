@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    cursor:pointer;
+}
+
+.hotjar-elements{
+    pointer-events:none;
+    user-select:none;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100vw;
+    height:100%;
+    z-index:999999999;
+}
+.hotjar-elements > div{
+    background-color:rgba(0,0,0,.6);
+    position:absolute;
+}
+
+.hotjar-elements .top{
+    left:0;
+    width:100%;
+}
+
+.hotjar-elements .bottom{
+    left:0;
+    bottom:0;
+    width:100%;
+}
+
+.hotjar-elements .left{
+    left:0;
+}
+
+.hotjar-elements .right{
+    right:0;
+}
+
+.center{
+    border:2px dashed red;
+    position:absolute;
+    background-color:transparent !important;
+    z-index:999;
+    cursor:pointer !important;
+}
